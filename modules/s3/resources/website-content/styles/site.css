@@ -1,6 +1,7 @@
 body {
   font-family: "Lucida Console", Courier, monospace;
   background-color: #f1f1ee;
+  font-size: 100%
 }
 
 .centered {
@@ -13,6 +14,7 @@ body {
 .me {
 	font-size: 5px;
 	white-space: pre;
+	text-align: center;
 }
 
 #links a{

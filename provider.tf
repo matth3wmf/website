@@ -1,3 +1,4 @@
+# Default Provider
 provider "aws" {
-  region = "eu-west-2"
+  region = "us-east-1"
 }

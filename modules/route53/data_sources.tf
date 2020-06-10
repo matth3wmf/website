@@ -1,6 +1,5 @@
-# Assumes pre-existing hosted zone as registered Route53 Domains are not supported as a resource or data source
-# and therefore cannot be updated/created with the automatically generated name servers made by aws_route53_zone :(
-
+# We have to use an existing hosted zone as the nameservers cannot be set and there is no way of updating the domains
+# registered name servers without using local-exec and the aws cli
 data "aws_route53_zone" "website_zone" {
-  name         = var.my_domain
+  name = var.my_domain
 }
