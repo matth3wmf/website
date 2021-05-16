@@ -69,9 +69,12 @@ resource "aws_cloudfront_distribution" "s3_distribution" {
 
   restrictions {
     geo_restriction {
-      restriction_type = "whitelist"
-      locations        = ["US", "CA", "GB", "NZ", "AU"]
+      restriction_type = "none"
     }
+  }
+
+  logging_config {
+    bucket = aws_s3_bucket.log_bucket.bucket_domain_name
   }
 
   viewer_certificate {
