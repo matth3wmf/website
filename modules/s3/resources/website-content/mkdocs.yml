@@ -1,0 +1,17 @@
+site_name: matthewmf blog
+
+site_url: https://matthewmf.com/
+nav:
+  - Home: 'https://matthewmf.com'
+  - Welcome: 'index.md'
+  - Blogs:
+    - DevOps Support: './blogs/001-devops-support.md'
+
+theme:
+  name: terminal
+
+markdown_extensions:
+  - attr_list
+
+plugins:
+  - glightbox

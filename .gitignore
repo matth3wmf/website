@@ -4,6 +4,7 @@
 # .tfstate files
 *.tfstate
 *.tfstate.*
+.terraform.lock.hcl
 
 # Crash log files
 crash.log
@@ -30,3 +31,10 @@ override.tf.json
 
 # Intellij
 *.iml
+
+
+#Draw.io
+*.bkp
+
+#Mkdocs
+./modules/s3/resources/website-content/site/*
